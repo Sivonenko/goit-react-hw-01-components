@@ -1,0 +1,23 @@
+.profile {
+  color: rgb(57, 51, 82);
+  background-color: #ccc9bf;
+  border: 2px solid rgb(169, 170, 172);
+  text-align: center;
+  border-radius: 20px;
+  width: 390px;
+  margin: 0 auto;
+  .avatar {
+    height: 159px;
+    margin: 46px 0 16px;
+    border-radius: 100px;
+  }
+  .name {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(57, 51, 82);
+  }
+  .tag {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
