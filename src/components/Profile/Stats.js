@@ -1,7 +1,6 @@
-import React from "react";
 import style from "./StatsList.module.scss";
 
-const Stats = ({followers, views, likes}) => {
+const Stats = ({ followers, views, likes }) => {
   return (
     <ul className={style.statsList}>
       <li className={style.statsItem}>
