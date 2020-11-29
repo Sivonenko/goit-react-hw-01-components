@@ -3,12 +3,12 @@ import React from "react";
 import Profile from './Profile'
 import Statistics from "./Statistics";
 import FriendList from './FriendList'
-// import Transaction from './Transactions'
+import Transactions from './Transactions'
 
 import userData from "../data/user.json";
 import statsData from "../data/statistical.json";
 import friends from '../data/friends.json'
-// import transactions from '../data/transactions.json'
+import transactions from '../data/transactions.json'
 
 const App = () => {
   return (
@@ -20,7 +20,9 @@ const App = () => {
         avatar={userData.avatar}
         stats={userData.stats}
       />
-      <Statistics items={statsData}/>
+      <Statistics items={statsData} />
+      <FriendList friends={friends} />
+      <Transactions transactions={transactions}/>
     </>
   );
 };

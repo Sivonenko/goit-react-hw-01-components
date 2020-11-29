@@ -1,5 +1,4 @@
-
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import s from './Statistics.module.scss'
 
 const StatsListItem = ({ id, label, percentage }) => {
@@ -24,4 +23,14 @@ const Statistics = ({items}) => {
 </section>
     )
 }
+StatsListItem.propTypes = {
+  label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }),
+  ),
+};
+
 export default Statistics
