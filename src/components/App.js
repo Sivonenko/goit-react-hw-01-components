@@ -16,7 +16,7 @@ const App = () => {
       <Profile
         name={userData.name}
         tag={userData.tag}
-        location={userData.loation}
+        location={userData.location}
         avatar={userData.avatar}
         stats={userData.stats}
       />

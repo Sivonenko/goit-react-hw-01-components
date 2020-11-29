@@ -5,7 +5,7 @@ import Stats from "./Stats";
 const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
     <div className={style.profile}>
-      <div class="description">
+      <div className="description">
         <img src={avatar} alt="Аватар пользователя" className={style.avatar} />
         <p className={style.name}>{name}</p>
         <p className={style.tag}>@{tag}</p>
