@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
-import s from './Statistics.module.scss'
+import s from './statistics.module.scss'
+
 
 const StatsListItem = ({ id, label, percentage }) => {
     return (

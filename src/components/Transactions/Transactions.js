@@ -4,10 +4,10 @@ import s from './Transaction.module.scss'
 
 const TransactionsTr = ({id, type, amount, currency}) => {
   return (
-         <tr key={id}>
-      <th>{type}</th>
-      <th>{amount}</th>
-      <th>{currency}</th>
+         <tr className={s.tr} key={id}>
+      <td className={s.row}>{type}</td>
+      <td className={s.row}>{amount}</td>
+      <td className={s.row}>{currency}</td>
     </tr>
     )
 }
@@ -22,9 +22,9 @@ const Transactions = ({ transactions }) => {
         <table className={s.transactionsHistory}>
   <thead className={s.thad}>
     <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <th className={s.title}>Type</th>
+      <th className={s.title}>Amount</th>
+      <th className={s.title}>Currency</th>
     </tr>
   </thead>
 
@@ -34,7 +34,7 @@ const Transactions = ({ transactions }) => {
     )
 }
 
-Transactions.propTypes = {
+TransactionsTr.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
